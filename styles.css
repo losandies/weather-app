@@ -1,18 +1,10 @@
-body {
-    background-color: #ffffff
-}
 
 .weather__container {
-    
-    
-    height: 60vh;
-    width: 80vw;
     margin: auto;
     position: relative;
     top: 70px;
-    border-radius: 1.5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;;
     min-width: 300px;
     
 }
@@ -70,7 +62,6 @@ body {
 
 .weather__icon {
     display: flex;
-    /* justify-content: center; */
     position: relative;
     top: 60px;
     left: 250px;
