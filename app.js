@@ -1,3 +1,23 @@
+// Formatting date to Day, Date, Month, and Year
+
+
+const dateBuilder = d => {
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const days = ["Sun","Mon","Tues","Wed","thurs","Fri","Sat"];
+    
+        let day = days[d.getDay()];
+        let date = d.getDate();
+        let month = months[d.getMonth()];
+        let year = d.getFullYear();
+    
+        return `${day} ${date} ${month} ${year}`
+}
+
+let now = new Date();
+let date = document.getElementById('date');
+date.innerText = dateBuilder(now);    
+
+
 // API KEY & URL
 
 const api = {
@@ -39,22 +59,7 @@ function displayResults(weather) {
     
 }
 
-// Formatting date to Day, Date, Month, and Year
-let now = new Date();
-let date = document.getElementById('date');
-date.innerText = dateBuilder(now);    
 
-const dateBuilder = d => {
-        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const days = ["Sun","Mon","Tues","Wed","thurs","Fri","Sat"];
-    
-        let day = days[d.getDay()];
-        let date = d.getDate();
-        let month = months[d.getMonth()];
-        let year = d.getFullYear();
-    
-        return `${day} ${date} ${month} ${year}`
-}
 
 
 
