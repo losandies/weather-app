@@ -22,7 +22,7 @@ date.innerText = dateBuilder(now);
 
 const api = {
     base_url:'https://api.openweathermap.org/data/2.5/',
-    api_key: 'f2ddd235ef4603ada009bfeddf9536fa'
+    api_key: API_KEY
 }
 
 // Grabbing searchbar element and adding event listener for enter key
